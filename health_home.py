@@ -1,3 +1,3 @@
-import streamlit
+import streamlit as st
 import pandas
-streamlit.title('Healthcare')
+st.title('Healthcare')
