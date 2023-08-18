@@ -24,6 +24,6 @@ components.html(
 
 
 Module = ["Module 1", "Module 2", "Module 3", "Module 4"]
-selected_module = st.selectbox("Select Module:", Module)
+selected_Module = st.selectbox("Select Module:", Module)
 
 st.write("You selected:", selected_Module)
