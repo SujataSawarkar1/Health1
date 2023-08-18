@@ -27,3 +27,29 @@ Module = ["Module 1", "Module 2", "Module 3", "Module 4"]
 selected_Module = st.selectbox("Select Module:", Module)
 
 st.write("You selected:", selected_Module)
+
+
+# Apply custom CSS styling using HTML
+custom_css = """
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+    .custom-container {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+</style>
+"""
+st.markdown(custom_css, unsafe_allow_html=True)
+
+# Create a container with custom styling
+st.markdown("<div class='custom-container'>", unsafe_allow_html=True)
+st.title("Custom Styled UI with Streamlit")
+st.write("This is a custom-styled container.")
+st.button("Click me")
+st.markdown("</div>", unsafe_allow_html=True)
