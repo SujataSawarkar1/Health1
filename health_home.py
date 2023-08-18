@@ -23,7 +23,7 @@ components.html(
 )
 
 
-options = ["Option 1", "Option 2", "Option 3", "Option 4"]
-selected_option = st.selectbox("Select an option:", options)
+Module = ["Module 1", "Module 2", "Module 3", "Module 4"]
+selected_module = st.selectbox("Select Module:", Module)
 
-st.write("You selected:", selected_option)
+st.write("You selected:", selected_Module)
